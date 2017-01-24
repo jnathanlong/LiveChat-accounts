@@ -29,7 +29,7 @@ login_status = ''
 permission = ''
 groups = ''
 
-#CSV File object variables
+#CSV File object variables - Python script needs to reside in same directory as the account provisioning CSV
 csvfilename = 'WP Account Provisioning Worksheet.gsheet - LiveChat.csv'
 csvfile = open(csvfilename, 'r')
 fieldnames = ("login","name","job_title","login_status","permission","groups")
