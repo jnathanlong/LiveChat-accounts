@@ -14,9 +14,9 @@ from requests.auth import HTTPBasicAuth
 
 
 #LiveChat API Key Variable
-LC_api = 'bd63f8e084ebfa6ed96e93ecc0ab9de4'
+LC_api = input("Please paste your API key here:  ")
 url = "https://api.livechatinc.com/agents"
-User_ID = "jeremy.long@warbyparker.com"
+User_ID = input("Please enter your LiveChat username-email here:  ")
 header = {"X-API-Version": "2"}
 
 GET = requests.get(url, auth=(User_ID, LC_api), headers=header)
